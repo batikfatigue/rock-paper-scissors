@@ -9,4 +9,15 @@ function getComputerChoice () {
     }
 }
 
+function getHumanChoice() {
+    let choice;
+    const choices = ['rock', 'paper', 'scissors'];
+    while (!choices.includes(choice)) {
+       choice = prompt('Enter choice (rock/paper/scissors):'
+            , 'rock').toLowerCase();
+    };
+    console.log(choice);
+}
+
 console.log(getComputerChoice());
+getHumanChoice();
